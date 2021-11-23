@@ -5,10 +5,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+html{
+    --color-fondo: black;
+    --color-header: rgb(26, 26, 26);
+}
+
+body{
+    background-color: var(--color-fondo);
+}
+
+header{
+    background-color: var(--color-header);
 }
 
 nav{
+    color: white;
+    background-color: var(--color-header);
     margin: auto;
     position: sticky;
     width: 100%;
