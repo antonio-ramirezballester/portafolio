@@ -5,11 +5,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html{
     --color-fondo: black;
     --color-header: rgb(26, 26, 26);
+    --unit-gap: 0.3rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 15vh 20vh 20vh 20vh 20vh 15vh;
+    grid-template-areas:
+        "a-header a-header a-header"
+        "a-img1 a-img1 a-article1"
+        "a-article2 a-img2 a-img2"
+        "a-img3 a-img3 a-article3"
+        "a-truck1 a-article4 a-truck2"
+        "a-footer a-footer a-footer"
+    ;
+    gap: var(--unit-gap);
 }
 
 body{
@@ -17,10 +34,11 @@ body{
 }
 
 header{
+    grid-area: a-header;
     background-color: var(--color-header);
 }
 
-nav{
+header nav{
     color: white;
     background-color: var(--color-header);
     margin: auto;
@@ -32,20 +50,64 @@ nav{
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);    
 }
 
-nav h1{
+header nav h1{
     margin-left: 5%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav ul{
+header nav ul{
     margin-left: 13rem; /*450px*/
 }
 
-nav ul li{
+header nav ul li{
     display: inline-block;
     list-style: none;
     margin: 0px 50px;
     font-size: 18px;
     font-family: 'Bitter', serif;
     font-weight: bolder;
+}
+
+.img1{
+    grid-area: a-img1;
+}
+
+.img2{
+    grid-area: a-img2;
+}
+
+.img3{
+    grid-area: a-img3;
+}
+
+.img1{
+    grid-area: a-img1;
+}
+
+.truck1{
+    grid-area: a-truck1;
+}
+
+.truck2{
+    grid-area: a-truck2;
+}
+
+.article1{
+    grid-area: a-article1;
+}
+
+.article2{
+    grid-area: a-article2;
+}
+
+.article3{
+    grid-area: a-article 3;
+}
+
+.article4{
+    grid-area: a-article 4;
+}
+
+footer{
+    grid-area: a-footer;
 }
