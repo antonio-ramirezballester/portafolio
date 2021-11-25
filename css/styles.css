@@ -53,16 +53,21 @@ header nav ul li{
     font-weight: bolder;
 }
 
+main{
+    display: flex;
+}
+
 .presentation{
-    margin-top: 10%;
+    border: solid 1px red;
     width: 65%;
     display: flex;
     margin: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .presentation img{
+    margin-top: 10%;
     align-items: end;
-    width: 10%;
+    width: 50%;
 }
