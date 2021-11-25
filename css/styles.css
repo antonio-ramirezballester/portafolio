@@ -1,3 +1,4 @@
+@import url('normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap');
 /* font-family: 'Bitter', serif; */
 
@@ -5,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 html{
@@ -14,27 +14,12 @@ html{
     --unit-gap: 0.3rem;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 15vh 20vh 20vh 20vh 20vh 15vh;
-    grid-template-areas:
-        "a-header a-header a-header"
-        "a-img1 a-img1 a-article1"
-        "a-article2 a-img2 a-img2"
-        "a-img3 a-img3 a-article3"
-        "a-truck1 a-article4 a-truck2"
-        "a-footer a-footer a-footer"
-    ;
-    gap: var(--unit-gap);
-}
-
 body{
     background-color: var(--color-fondo);
+    color: white;
 }
 
 header{
-    grid-area: a-header;
     background-color: var(--color-header);
 }
 
@@ -56,7 +41,7 @@ header nav h1{
 }
 
 header nav ul{
-    margin-left: 13rem; /*450px*/
+    margin-left: 22%; /*450px*/
 }
 
 header nav ul li{
@@ -68,46 +53,16 @@ header nav ul li{
     font-weight: bolder;
 }
 
-.img1{
-    grid-area: a-img1;
+.presentation{
+    margin-top: 10%;
+    width: 65%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
-.img2{
-    grid-area: a-img2;
-}
-
-.img3{
-    grid-area: a-img3;
-}
-
-.img1{
-    grid-area: a-img1;
-}
-
-.truck1{
-    grid-area: a-truck1;
-}
-
-.truck2{
-    grid-area: a-truck2;
-}
-
-.article1{
-    grid-area: a-article1;
-}
-
-.article2{
-    grid-area: a-article2;
-}
-
-.article3{
-    grid-area: a-article 3;
-}
-
-.article4{
-    grid-area: a-article 4;
-}
-
-footer{
-    grid-area: a-footer;
+.presentation img{
+    align-items: end;
+    width: 10%;
 }
