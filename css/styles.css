@@ -3,7 +3,6 @@
 /* font-family: 'Bitter', serif; */
 /* font-family: 'Estonia', cursive; */
 
-
 *{
     margin: 0;
     padding: 0;
@@ -11,14 +10,16 @@
 }
 
 html{
-    --color-fondo: black;
+    --color-background: black;
     --color-header: rgb(26, 26, 26);
     --unit-gap: 0.3rem;
+    --color-card: rgb(26, 26, 26);
 }
 
 body{
-    background-color: var(--color-fondo);
+    background-color: var(--color-background);
     color: white;
+    font-family: 'Bitter', serif;
 }
 
 header{
@@ -42,8 +43,13 @@ header nav h1{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header nav h1:hover{
+    color:  tomato;
+    cursor: pointer;
+}
+
 header nav ul{
-    margin-left: 22%; /*450px*/
+    margin: auto;
 }
 
 header nav ul li{
@@ -61,12 +67,12 @@ header nav ul li a{
     text-decoration: none;
 }
 
-main{
-    border: 2px solid tomato;
+header nav ul li a:hover{
+    color: tomato;
 }
 
-section{
-
+main{
+    border: 2px solid tomato;
 }
 
 #presentation{
@@ -79,7 +85,7 @@ section{
 }
 
 #presentation img{
-    margin-top: 5%;
+    padding-top: 5%;
     align-items: end;
     width: 200px;
     margin-right: 20rem;
@@ -102,4 +108,37 @@ section{
     font-size: 55px;
     margin-top: -80px;
     color: gray;
+}
+
+#about_me{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-header);
+    padding-top: 5rem;
+}
+
+.card{
+    width: 40%;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.829), 0 6px 20px 0 rgba(89, 0, 255, 0.678);
+    text-align: justify;
+    align-items: center;
+    background-color: var(--color-background);
+}
+
+.card h1{
+    text-align: center;
+}
+
+.card p{
+    padding-top: 5px;
+    margin: 0 1rem;
+    line-height: 2rem;
+    font-size: 19px;
+}
+
+#about_me img{
+    width: 50%;
 }
