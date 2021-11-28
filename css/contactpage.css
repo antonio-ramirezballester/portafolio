@@ -1,4 +1,5 @@
 @import url('normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Estonia&display=swap');
 /* font-family: 'Bitter', serif; */
 /* font-family: 'Estonia', cursive; */
@@ -72,5 +73,38 @@ header nav ul li a:hover{
 
 main{
     border: 2px solid tomato;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#informacion{
+    height: 51rem;
     padding-bottom: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Bitter', serif;
+}
+
+#informacion h1{
+    font-size: 70px;
+}
+
+#informacion h2{
+    font-size: 40px;
+    margin-top: 2rem;
+}
+
+#informacion p{
+    font-size: 25px;
+    margin-top: 1rem;
+    color: gray;
+}
+
+#informacion i{
+    font-size: 30px;
+    padding-right: 1rem;
 }
